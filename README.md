@@ -15,7 +15,7 @@ dependencies:
 
 ### Initialization
 
-```dart
+```
 import 'package:opensubtitles_api/opensubtitles_api.dart';
 
 final api = OpensubtitlesApi(
@@ -26,7 +26,7 @@ final api = OpensubtitlesApi(
 
 ### Authentication
 
-```dart
+```
 // Login
 final userStatus = await api.login(
   username: 'your_username',
@@ -42,7 +42,7 @@ final userInfo = await api.getUserInformation();
 
 ### Computing File Hash
 
-```dart
+```
 // Get hash from local file
 final localHash = await api.getOpenSubtitlesHash('path/to/your/video.mp4');
 
@@ -58,7 +58,7 @@ final subtitles = await api.searchSubtitles(
 
 ### Searching Subtitles
 
-```dart
+```
 // Search by title
 final subtitles = await api.searchSubtitles(
   query: 'movie title',
@@ -81,7 +81,7 @@ final subtitlesByHash = await api.searchSubtitles(
 
 ### Downloading Subtitles
 
-```dart
+```
 // Get download URL
 final downloadInfo = await api.getDownloadUrl(
   fileId: 123456,
@@ -97,7 +97,7 @@ final subtitleContent = await api.forceDownload(
 
 ### Searching Movies and TV Shows
 
-```dart
+```
 // Search movies
 final movies = await api.searchFeatures(
   query: 'movie title',
@@ -120,7 +120,7 @@ final latest = await api.latestSubtitles(
 
 ### Additional Functions
 
-```dart
+```
 // Get supported formats
 final formats = await api.getSubtitleFormats();
 
@@ -135,7 +135,7 @@ final fileInfo = await api.guessit(filename: 'movie.2023.1080p.en.mkv');
 
 The package throws `OpensubtitlesApiException` in case of API errors or network issues:
 
-```dart
+```
 try {
   final subtitles = await api.searchSubtitles(query: 'movie');
 } catch (e) {
