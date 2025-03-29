@@ -369,7 +369,7 @@ class OpensubtitlesApi {
     foreignPartsOnly: foreignPartsOnly,
     hearingImpaired: hearingImpaired,
     id: id,
-    imdb_id: imdb_id,
+    imdbId: imdb_id,
     languages: languages,
     machineTranslated: machineTranslated,
     movieHash: movieHash,
