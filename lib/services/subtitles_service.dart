@@ -94,7 +94,7 @@ class SubtitlesService {
     Inclusion? foreignPartsOnly,
     Inclusion? hearingImpaired,
     int? id,
-    int? imdb_id,
+    int? imdbId,
     List<String>? languages,
     Inclusion? machineTranslated,
     String? movieHash,
@@ -120,7 +120,7 @@ class SubtitlesService {
       if (foreignPartsOnly != null) 'foreign_parts_only': foreignPartsOnly.name,
       if (hearingImpaired != null) 'hearing_impaired': hearingImpaired.name,
       if (id != null) 'id': id,
-      if (imdb_id != null) 'imdb_id': imdb_id,
+      if (imdbId != null) 'imdb_id': imdbId,
       if (languages != null) 'languages': languages.join(','),
       if (machineTranslated != null)
         'machine_translated': machineTranslated.name,

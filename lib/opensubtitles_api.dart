@@ -274,7 +274,7 @@ class OpensubtitlesApi {
   /// [languages] - List of language codes to filter results
   /// [type] - Type of content to search for
   /// [year] - Year of release
-  /// [imdb_id] - IMDB ID of the content
+  /// [imdbId] - IMDB ID of the content
   /// [tmdbId] - TMDB ID of the content
   /// [page] - Page number for pagination
   /// [orderBy] - Field to sort results by
@@ -345,7 +345,7 @@ class OpensubtitlesApi {
     Inclusion? foreignPartsOnly,
     Inclusion? hearingImpaired,
     int? id,
-    int? imdb_id,
+    int? imdbId,
     List<String>? languages,
     Inclusion? machineTranslated,
     String? movieHash,
@@ -369,7 +369,7 @@ class OpensubtitlesApi {
     foreignPartsOnly: foreignPartsOnly,
     hearingImpaired: hearingImpaired,
     id: id,
-    imdb_id: imdb_id,
+    imdbId: imdbId,
     languages: languages,
     machineTranslated: machineTranslated,
     movieHash: movieHash,
